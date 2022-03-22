@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>survey-form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <h1 id="title">Cuentanos sobre su Golf</h1>
+        <p id="description">Este es un breve formulario para poder comunicarte con nosotros</p>
+    </div>
+    <div id="container-father">
+        <div id="container">
+            <form id="survey-form">
+                <div>
+                    <label for="name" id="name-label"> Nombre</label>
+                    <input type="text" required id="name" name="name" placeholder="Nombre y apellido">
+                </div>
+                <br>
+                <div>
+                    <label for="email" id="email-label">Email</label>
+                    <input type="email" required id="email" name="email" placeholder="Ingrese su email">
+                </div>
+                <br>
+                <div>
+                    <label for="number" id="number-label">Año</label>
+                    <input type="number" name="number" id="number" min="1975" max="2022" required   placeholder="Año">
+                </div>
+                <br>
+                <div div class="formParts">
+                    <label for="dropdown" id="modelos">Version</label>
+                    <select id="dropdown">
+                        <option value="gti">GTI</option>
+                        <option value="gtd">GTD</option>
+                        <option value="tsi">TSI</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+                <br>
+                <div class="formParts">
+                    <p>Combustible</p>
+                    <label for="nafta">
+                    <input id="nafta" name="combustible" value="nafta" type="radio">Nafta</label>
+                    <label for="diesel">
+                    <input id="diesel" name="combustible" value="diesel" type="radio">Diesel
+                    </label>
+                </div>
+                <br>
+                <div class="formParts">
+                    <p>¿En que estado se encuentra?</p>
+                    <label for="estado"><input type="checkbox" id="estado" value="original" name="original">Original</label>
+                    <label for="estado"><input type="checkbox" id="estado" value="modificado" name="modificado">Modificado</label>
+                    <label for="estado"><input type="checkbox" id="estado" value="proyecto" name="proyecto"> Proyecto</label>
+                </div>
+                <br>
+                <div class="formParts">
+                    <p>Agrega un comentario sobre modificaciones o algo que quieras compartir</p>
+                    <textarea></textarea>
+                    <button type="submit" id="submit"><b>Enviar</b></button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+
+    
+</body>

@@ -1,0 +1,33 @@
+body{
+    background-image: url(./volkswagenLogo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+}
+#header{
+    text-align: center;
+    padding-top: 30px;
+}
+#container{
+    padding-top: 30px;
+}
+#survey-form{
+    text-align: center;
+    margin: 0 auto;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    background-color: rgba(0, 0, 0, 0.582);
+    color: whitesmoke;
+    width: 700px;
+    
+}
+form{
+    background: var(--color-darkblue-alpha);
+    padding: 2.5rem 0.625rem;
+    border-radius: 0.25rem;
+}
